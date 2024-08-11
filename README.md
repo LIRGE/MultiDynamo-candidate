@@ -11,14 +11,32 @@ A multiomic extension to the popular dynamo library that brings the power of dyn
 ## Installation
 Create a new conda environment
 ```sh
-conda create -n multi_dynamo_env -c conda-forge anndata cmake igraph jupyter matplotlib muon numpy pandas pysam python=3.11 scanpy scrublet scvi-tools
+conda create -n multi_dynamo_env -c conda-forge jupyter matplotlib numpy pandas python=3.11
+```
 
-Fix the version of jax
+Activate the multi_dynamo_env conda environment
+
 ```sh
-conda install ott-jax==0.4.6![image](https://github.com/user-attachments/assets/86255b1c-62dc-4d4b-af00-f3cb7f77f0f9)
+conda activate multi_dynamo_env
+```
 
-Add dynamo
+Clone MultiDynamo-candidate
 
-Add MOSCOT
+```sh
+git clone https://github.com/LIRGE/MultiDynamo-candidate
+```
 
-ADD scvi
+Switch to the MultiDynamo-candidate directory and install the package
+
+```sh
+cd /location/of/MultiDynamo-candidate
+pip install -e .
+```
+## Usage
+Open a jupyter session and go to the 'jupyter' directory to try out the sample notebooks.
+
+## Contributing
+Please consider contributing.
+
+## License
+Please note that this is built around dynamo and is subject to any restrictions therein.
